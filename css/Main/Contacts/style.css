@@ -1,0 +1,368 @@
+.contacts {
+    width: 100%;
+}
+.contacts h1 {
+    padding: 20px;
+    font-size: 64px;
+    color: #ffffff;
+    background: #56d270;
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
+.contacts-block {
+    max-width: 1550px;
+    width: 100%;
+    height: auto;
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contain__contacts_img {
+    border-radius: 32px;
+    background-image: url(../../../img/Footer/logo_max1.png);
+    background-size: cover;
+    height: 393px;
+    width: 100%;
+  }
+  .contain__contacts_color {
+    border-radius: 32px;
+    background-color: #ffffffcb;
+    border: 3px solid #56d27139;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 36px;
+    color: rgb(72, 64, 64);
+  }
+  .contain__contacts_tel {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+  }
+  .company__title {
+    padding: 35px;
+    height: 300px;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 35px;
+    color: rgb(72, 64, 64);
+  }
+  .director {
+    font-size: 17px;
+  }
+  .mode {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 18px;
+    color: rgb(72, 64, 64);
+  }
+  .mode__workers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .mode__worker {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    border-bottom: 3px solid rgb(72, 64, 64);
+  }
+  .mode__weekend_sb {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    border-bottom: 3px solid rgb(72, 64, 64);
+  }
+  .mode__weekend_block_sb {
+    padding: 15px;
+    width: auto;
+    height: auto;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgb(72, 64, 64);
+    color: rgb(255, 255, 255);
+  }
+  .mode__weekend {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    border-bottom: 3px solid #56d270;
+  }
+  .mode__weekend_block {
+    padding: 15px;
+    width: auto;
+    height: auto;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #56d270;
+    color: rgb(255, 255, 255);
+  }
+  .mode__worker_block {
+    padding: 15px;
+    width: 60px;
+    height: auto;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgb(72, 64, 64);
+    color: rgb(255, 255, 255);
+  }
+  /* FORM */
+  .company__title_form {
+    width: 55%;
+    padding: 35px;
+    height: auto;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 35px;
+    color: rgb(72, 64, 64);
+  }
+  
+  .contain__contacts_color h5 {
+    font-size: 18px;
+    color: #fff;
+  }
+  .message__whatsapp {
+    text-decoration: none;
+    width:70%;
+    height: auto;
+    margin-top: 5px;
+    background-color: #56d270;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .whatsapp__img {
+    border-radius: 5px;
+    background-image: url(../../../img/Main/whatsapp-new.png);
+    background-size: cover;
+    background-position: center;
+    height: 50px;
+    width: 50px;
+  }
+  
+    @media (max-width: 1550px) {
+    .contain__contacts_img {
+      height: 300px;
+    }
+    .contain__contacts_color {
+      height: 300px;
+      gap: 15px;
+      font-size: 24px;
+      border: 2px solid #56d27139;
+    }
+    .contain__contacts_tel {
+      padding-left: 24px;
+      padding-right: 24px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+    .company__title {
+      height: 250px;
+      padding: 20px;
+      font-size: 24px;
+      gap: 20px;
+    }
+    .company__title_form span {
+      font-size: 24px;
+    }
+    .company__title_form {
+      padding: 0;
+    }
+    .form {
+      width: 70%;
+      height: 600px;
+      border-radius: 10px;
+      padding: 20px;
+      font-size: 16px;
+      gap: 15px;
+    }
+    .form__input span {
+      font-size: 16px;
+    }
+    .button {
+      height: 40px;
+    }
+    .main_err {
+      padding: 10px;
+    }
+    .main_err_massage {
+      font-size: 14px;
+    }
+  } 
+  @media (max-width: 1000px) {
+    .whatsapp__img {
+      height: 6vw;
+      width: 6vw;
+    }
+    
+    .director {
+      font-size: 1.7vw;
+    }
+    .company__title_form {
+      width: 70%;
+    }
+    .form {
+      width: 100%;
+    }
+    .company__title {
+      margin-top: 25px;
+      margin-bottom: 25px;
+      height: auto;
+    }
+    .button__block {
+      justify-content: flex-start;
+    }
+    .mode {
+      flex-direction: column;
+    }
+  }
+  @media (max-width: 500px) {
+    .message__whatsapp {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-radius: 10px;
+      background: #c2ffcf;
+      gap: 10px;
+    }
+    .message__whatsapp h5 {
+      color: #35cd56;
+      font-size: 20px;
+    }
+    .message__whatsapp h5::before {
+      content: 'Связаться по';
+    }
+    .whatsapp__img {
+      display: none;
+    }
+    .contain {
+      padding-bottom: 0;
+    }
+    .contain__contacts_tel {
+      box-sizing: border-box;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .contain__contacts_img {
+      border-radius: 24px;
+      height: auto;
+      width: 95vw;
+    }
+    .contain__contacts_color {
+      padding-top: 16px;
+      padding-bottom: 16px;
+      border-radius: 24px;
+      height: auto;
+      width: 95vw;
+      font-size: 20px;
+      gap: 10px;
+    }
+    .director {
+      font-size: 14px;
+    }
+    .company__title span {
+      font-size: 20px;
+    }
+    .mode__weekend_sb {
+      border-bottom: 2px solid rgb(72, 64, 64);
+    }
+    .mode__weekend_block_sb {
+      padding: 10px;
+      font-size: 16px;
+    }
+    .mode__worker_block {
+      width: 50px;
+      padding: 10px;
+      font-size: 16px;
+    }
+    .mode__weekend_block {
+      padding: 10px;
+      font-size: 16px;
+    }
+    .mode__workers span {
+      font-size: 16px;
+    }
+    .mode__weekend {
+      border-bottom: 2px solid #56d270;
+    }
+    .mode__worker {
+      border-bottom: 2px solid rgb(72, 64, 64);
+    }
+    .company__title_form {
+      width: 90vw;
+      gap: 15px;
+    }
+    .company__title_form span {
+      font-size: 20px;
+    }
+    .form {
+      width: 90vw;
+      height: auto;
+    }
+    .form__input span {
+      font-size: 14px;
+    }
+    .form__input input::placeholder {
+      font-size: 14px;
+    }
+    .form__input input {
+      font-size: 14px;
+      height: 30px;
+    }
+    .form__input textarea {
+      font-size: 14px;
+      height: 60px;
+    }
+    .button__block h3 {
+      font-size: 14px;
+      text-align: left;
+    }
+    .button {
+      font-size: 14px;
+    }
+    .logo__img {
+      height: 50px;
+      width: 150px;
+    }
+    .main_done {
+      width: 70vw;
+    }
+    .main_done_massage {
+      font-size: 14px;
+    }
+    .main__done_buttons {
+      padding-top: 10px;
+      height: auto;
+    }
+  }
+  @media (max-width: 430px) {
+    .message__whatsapp {
+      width: 80vw;
+      padding: 10px;
+      text-align: center;
+    }
+    .message__whatsapp h5 {
+  
+      font-size: 18px;
+    }
+  }

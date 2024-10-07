@@ -1,0 +1,178 @@
+main {
+    margin: 0 auto;
+    max-width: 1550px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+}
+/* Блок О КОМПАНИИ */
+.company {
+    display: flex;
+    gap: 16px;
+    align-items: stretch;
+}
+
+.company-colum {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.company-colum_text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    font-size: 20px;
+    color: rgb(72, 64, 64);
+}
+
+.company-colum_text span {
+    color: #56d270;
+    font-weight: 600;
+}
+
+.company-colum_text h1 {
+    color: rgb(72, 64, 64);
+    margin-bottom: 16px;
+}
+
+.company-img-one {
+    width: 100%;
+    background-size: contain;
+    object-fit: cover;
+    border-radius: 16px;
+    flex-grow: 1;
+    
+}
+
+/* Блок ВИДЫ РАБОТ */
+.work h1 {
+    padding: 20px;
+    font-size: 64px;
+    color: #ffffff;
+    background: #56d270;
+    border-radius: 16px;
+}
+
+/* Блок РАСЧЕТ СТОИМОСТИ */
+.prices h1 {
+    padding: 20px;
+    font-size: 64px;
+    color: #ffffff;
+    background: #56d270;
+    border-radius: 16px;
+}
+
+
+
+/* ЧЕК-БОКС */
+.menu {
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+}
+input[type="checkbox"] {
+    display: none;
+  }
+  
+  .btn {
+    background: rgb(72, 64, 64);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+  }
+
+  .btn img {
+    width: 30px;
+    position: relative;
+    top: 1px;
+    right: 1px;
+  }
+  .btn--large {
+    width: 70px;
+    height: 70px;
+  }
+  .btn--menu:after,.btn--menu:before {
+    content: "";
+    display: block;
+    width: 35px;
+    height: 3px;
+    background: #fff;
+    position: absolute;
+    top: 33px;
+    left: 18px;
+    transition: transform 100ms;
+  }
+  .btn--menu:after {
+    transform: translateY(-5px);
+  }
+  .btn--menu:before {
+    transform: translateY(5px);
+  }
+  .btn--share {
+    background: #f39c12;
+  }
+  .btn--star {
+    background: #56d270;
+  }
+  .btn--comment {
+    background: #0088cc;
+  }
+  .actions-menu {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    right: 15px;
+    bottom: 15px;
+  }
+  .actions-menu .btn {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    opacity: 0;
+    transition: top 200ms cubic-bezier(0.175, 0.885, 0.32, 1.275),
+                left 200ms cubic-bezier(0.175, 0.885, 0.32, 1.275),
+                opacity 200ms;
+  }
+  .actions-menu .btn--menu {
+    position: absolute;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+  .btn--menu, #actionMenuButton:checked + .actions-menu > .btn {
+    opacity: 1;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  }
+  #actionMenuButton:checked + .actions-menu > .btn--menu:after {
+    transform: rotate(45deg);
+  }
+  #actionMenuButton:checked + .actions-menu > .btn--menu:before {
+    transform: rotate(-45deg);
+  }
+  #actionMenuButton:checked + .actions-menu > .btn--share {
+    top: -70px;
+  }
+  #actionMenuButton:checked + .actions-menu > .btn--star {
+    top: -50px;
+    left: -50px;
+  }
+  #actionMenuButton:checked + .actions-menu > .btn--comment {
+    left: -70px;
+  }
+
+@media (max-width: 1440px) {
+    .company-colum_text {
+        font-size: 18px;
+    }
+}
+
+/* Блок ВИДЫ РАБОТ */
