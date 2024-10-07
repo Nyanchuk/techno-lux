@@ -93,6 +93,7 @@ header {
     color: #ffffff;
     font-weight: 300;
     transition: all 0.3s;
+    box-shadow: 5px 5px 5px #4f4f4f52;
 }
 
 .header-section-link div:hover {

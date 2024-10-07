@@ -1,4 +1,5 @@
 .contacts {
+    box-sizing: border-box;
     width: 100%;
 }
 .contacts h1 {
@@ -10,6 +11,7 @@
     margin-bottom: 20px;
 }
 .contacts-block {
+    box-sizing: border-box;
     max-width: 1550px;
     width: 100%;
     height: auto;
@@ -18,6 +20,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 3px;
   }
   .contain__contacts_img {
     border-radius: 32px;
@@ -27,6 +30,7 @@
     width: 100%;
   }
   .contain__contacts_color {
+    box-sizing: border-box;
     border-radius: 32px;
     background-color: #ffffffcb;
     border: 3px solid #56d27139;
@@ -156,6 +160,9 @@
     background-position: center;
     height: 50px;
     width: 50px;
+  }
+  .mode__workers span {
+    font-size: 20px;
   }
   
     @media (max-width: 1550px) {

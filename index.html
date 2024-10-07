@@ -85,14 +85,127 @@
 
         <section class="work">
             <h1>ВИДЫ РАБОТ</h1>
-            <div>
+            <div class="work-block">
+                <div class="work-block_element">
+                    <span>КРОВЕЛЬНЫЕ</span>
+                    <p>Работы могут включать утепление, установку водосточных систем,
+                        вентиляции, а также другие действия, необходимые для обеспечения
+                        функциональности и долговечности кровли.
+                    </p>
+                    <div class="work-block_element-done">
+                        <div>
+                            <span>✔</span>Металлочерепица, профилированный настил
+                          </div>
+                          <div>
+                            <span>✔</span>Рулонные наплавляемые материалы
+                          </div>
+                    </div>
+                    
+                </div>
+                <div class="work-block_element">
+                    <span>ФАСАДНЫЕ</span>
+                    <p>
+                        Выполняем работы по обновлению, ремонту и монтажу фасада здания.
+                        Работы могут включать ремонт повреждений, утепление, гидроизоляцию,
+                        штукатурку, облицовку.
+                      </p>
+                      <div class="work-block_element-done">
+                      <div>
+                        <span>✔</span>Штукатурный фасад: гладкий, текстурный, декоративный
+                      </div>
+                      <div>
+                        <span>✔</span> Навесной фасад: керамогранит, композит, металл, стойкий ПВХ
+                      </div>
+                    </div>
+                </div>
+                <div class="work-block_element">
+                    <span>ОТДЕЛОЧНЫЕ</span>
+                    <p>
+                        Выполняем работы по ремонту и устройству внутренней отделки
+                        помещения. Работы могут включать в себя создание декоративной и
+                        функциональной отделки внутренних стен, потолка, пола и других
+                        элементов интерьера. Могут включать в себя электромонтажные и
+                        сантехнические работы.
+                      </p>
+                      <div class="work-block_element-done">
+                        <div>
+                            <span>✔</span> Устройство перегородок
+                        </div>
+                        <div>
+                            <span>✔</span> Отделка стен: штукатурка, обои, покраска, нанесение декоративных
+                            покрытий
+                        </div>
+                        <div>
+                            <span>✔</span> Отделка потолка: штукатурка, покраска, устройство подвесных
+                            потолков
+                        </div>
+                        <div>
+                            <span>✔</span> Отделка пола: утеплитель, стяжка, линолеум, плитка, ламинат,
+                            ковролин
+                        </div>
+                    </div>
+                    </div>
+                </div>
 
             </div>
-            
         </section>
 
-        <section class="prices">
+        <section class="prices-main">
             <h1>РАСЧЕТ СТОИМОСТИ</h1>
+            <div class="prices">
+                <div class="prices__volume">
+                    <p>Площадь вашего помещения:</p>
+                    <input
+                        type="range"
+                        min="1"
+                        max="100"
+                        id="slider"
+                        class="slider"
+                    />
+                    <p class="sliderValue">
+                        <span id="sliderValue">1</span> м²
+                    </p>
+                </div>
+                
+                <div class="grid_item">
+                    <div class="grid_item_block">
+                        <div>КРОВЕЛЬНЫЕ</div>
+                        <div class="green" id="roofPrice">от 2000 руб</div>
+                    </div>
+                </div>
+                <div class="grid_item">
+                    <div class="grid_item_block">
+                        <div>ФАСАДНЫЕ</div>
+                        <div class="green" id="facadePrice">от 3300 руб</div>
+                    </div>
+                </div>
+                <div class="grid_item">
+                    <div class="grid_item_block">
+                        <div>ОТДЕЛОЧНЫЕ</div>
+                        <div class="green" id="finishPrice">от 5600 руб</div>
+                    </div>
+                </div>
+            </div>
+            <div class="dop__block">
+                <div class="company__title">
+                    <span>
+                        <span class="prices-main-dop">ОПЦИОНАЛЬНО</span>
+                    </span>
+                    <p class="settings__p">
+                        Электромонтажные и сантехнические работы выполняются комплексно с внутренними отделочными работами. 
+                        Электромонтажные и сантехнические виды работ выполняются по заявке заказчика.
+                    </p>
+                </div>
+            </div>
+            <div class="roof">
+                <span>
+                    <span class="green">ВАЖНО</span>
+                </span>
+                <p>
+                    Цены, указанные на сайте, предварительные и могут меняться в зависимости от видов и объемов работ.
+                </p>
+        </div>
+            
             
         </section>
 
@@ -124,8 +237,8 @@
                   </div>
                 </div>
                 <div class='company__title'>
-                  <span>
-                    <span style=' color: "#56d270" ''>ВРЕМЯ</span> РАБОТЫ
+                  <span class="prices-main-dop">
+                    <span>ВРЕМЯ</span> РАБОТЫ
                   </span>
                   <div class='mode'>
                     <div class='mode__workers'>
@@ -156,7 +269,6 @@
                 </div>
               </div>
         </section>
-
     </main>
 
     <footer>
@@ -207,5 +319,43 @@
         </button>
         <label for="actionMenuButton" class="btn btn--large btn--menu"/>
     </div>
+
+    <script>
+        const basePriceRoof = 2000;
+        const basePriceFacade = 3300;
+        const basePriceFinish = 650;
+    
+        const slider = document.getElementById('slider');
+        const sliderValue = document.getElementById('sliderValue');
+        const roofPrice = document.getElementById('roofPrice');
+        const facadePrice = document.getElementById('facadePrice');
+        const finishPrice = document.getElementById('finishPrice');
+    
+        slider.value = 1; 
+        sliderValue.textContent = slider.value;
+    
+        function calculatePrice(basePrice, value) {
+            return basePrice * value;
+        }
+    
+        function updatePrices() {
+            const value = +slider.value;
+            sliderValue.textContent = value;
+            
+            roofPrice.textContent = `от ${calculatePrice(basePriceRoof, value)} руб`;
+            facadePrice.textContent = `от ${calculatePrice(basePriceFacade, value)} руб`;
+            finishPrice.textContent = `от ${calculatePrice(basePriceFinish, value)} руб`;
+    
+            slider.style.background = `linear-gradient(to right, #56d270 1%, #56d270 ${value}%, rgb(232, 232, 232) ${value}%, rgb(232, 232, 232) 100%)`;
+        }
+    
+        slider.addEventListener('input', updatePrices);
+
+        updatePrices();
+
+
+
+        
+    </script>
 </body>
 </html>

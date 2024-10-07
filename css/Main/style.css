@@ -51,26 +51,6 @@ main {
     
 }
 
-/* Блок ВИДЫ РАБОТ */
-.work h1 {
-    padding: 20px;
-    font-size: 64px;
-    color: #ffffff;
-    background: #56d270;
-    border-radius: 16px;
-}
-
-/* Блок РАСЧЕТ СТОИМОСТИ */
-.prices h1 {
-    padding: 20px;
-    font-size: 64px;
-    color: #ffffff;
-    background: #56d270;
-    border-radius: 16px;
-}
-
-
-
 /* ЧЕК-БОКС */
 .menu {
     position: fixed;
