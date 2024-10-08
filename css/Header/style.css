@@ -134,7 +134,7 @@ header {
     gap: 36px;
 }
 
-.header-section-color span {
+.header-section-color h1 {
     max-width: 80%;
     font-size: 48px;
     font-weight: 300;
@@ -203,7 +203,7 @@ header {
         font-size: 14px;
     }
 
-    .header-section-color span {
+    .header-section-color h1 {
         font-size: 32px;
         font-weight: 400;
     }
@@ -237,7 +237,7 @@ header {
         height: 55px;
     }
     
-    .header-section-color span {
+    .header-section-color h1 {
         font-size: 24px;
         font-weight: 400;
     }
@@ -272,7 +272,7 @@ header {
         margin-top: 130px;
     }
 
-    .header-section-color span {
+    .header-section-color h1 {
         font-size: 20px;
     }
 }
@@ -326,9 +326,27 @@ header {
     .header-section-screen {
         margin-top: 120px;
     }
-
-    .header-section-color span {
-        font-size: 24px;
-        font-weight: 700;
+    .header-section-screen {
+        height: 250px;
+        background-image: none;
     }
+    
+
+    .header-section-color h1 {
+        min-width: 100%;
+        font-size: 34px;
+        font-weight: 700;
+        color: #4dbb65;
+        text-shadow: 1px 1px 1px #2f753e,
+             1px 2px 1px #2f753e,
+             1px 3px 1px #2f753e,
+             1px 4px 1px #2f753e,
+             1px 5px 1px #2f753e,
+             1px 6px 1px #2a6737,
+             1px 10px 5px rgba(16, 16, 16, 0.5),
+             1px 15px 10px rgba(16, 16, 16, 0.4),
+             1px 20px 30px rgba(16, 16, 16, 0.3),
+             1px 25px 50px rgba(16, 16, 16, 0.2);
+    }
+    
 }
