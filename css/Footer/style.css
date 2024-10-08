@@ -35,6 +35,16 @@ footer {
     color: rgb(72, 64, 64);
 }
 
+.footer-contacts a {
+    text-decoration: none;
+    color: rgb(72, 64, 64);
+    transition: color 0.3s;
+}
+
+.footer-contacts a:hover {
+    color: #56d270;
+}
+
 .footer-contacts:nth-child(2) span {
     cursor: pointer;
     transition: color 0.3s;
