@@ -1,0 +1,98 @@
+.questions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 100%;
+    height: 100px;
+    border-radius: 20px;
+    font-size: 34px;
+    color: rgb(72, 64, 64);
+  }
+  .questions_contain {
+    margin-top: 20px;
+    width: 100%;
+  }
+  .questions__contain_block {
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    padding: 25px;
+    background-color: rgb(232, 232, 232);
+    border-radius: 10px;
+    font-size: 20px;
+    color: rgb(72, 64, 64);
+  }
+  .questions__contain_block span {
+    width: 80%;
+  }
+  .questions__contain_img {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    width: 40px;
+    background-image: url(../../../img/Main/plus.png);
+    background-size: cover;
+    background-position: center;
+    height: 40px;
+    transition: all 0.3s;
+  }
+
+  .answer {
+    display: none;
+  }
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .answer.show {
+    display: block;
+    padding: 25px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    background-color: #56d270;
+    border-radius: 10px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    animation: slideIn 0.3s ease;
+  }
+
+  .questions__contain_img_active {
+    background-color: transparent;
+    border: none;
+    width: 40px;
+    background-image: url(../../../img/Main/plus.png);
+    background-size: cover;
+    background-position: center;
+    height: 40px;
+    transition: all 0.3s;
+    transform: rotate(45deg);
+  }
+
+  @media (max-width: 430px) {
+    .questions__contain_block {
+        padding: 12px;
+        font-size: 18px;
+    }
+
+    .answer.show {
+        padding: 12px;
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .questions__contain_block {
+        margin-bottom: 10px;
+    }
+  }

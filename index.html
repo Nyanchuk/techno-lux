@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body id="about">
     <header>
         <section class="header-section">
             <div class="header-section_contacts">
@@ -32,10 +32,10 @@
             </div>
         </section>
         <section class="header-section-link">
-            <div>О КОМПАНИИ</div>
-            <div>ВИДЫ РАБОТ</div>
-            <div>РАСЧЕТ СТОИМОСТИ</div> 
-            <div>КОНТАКТЫ</div>
+            <a href="#about">О КОМПАНИИ</a>
+            <a href="#services">ВИДЫ РАБОТ</a>
+            <a href="#pricing">РАСЧЕТ СТОИМОСТИ</a>
+            <a href="#contacts">КОНТАКТЫ</a>
         </section>
         <section class="header-section-screen">
             <div class="header-section-color">
@@ -83,7 +83,7 @@
             </div>
         </section>
 
-        <section class="work">
+        <section id="services" class="work">
             <h1>ВИДЫ РАБОТ</h1>
             <div class="work-block">
                 <div class="work-block_element">
@@ -153,7 +153,7 @@
             </div>
         </section>
 
-        <section class="prices-main">
+        <section id="pricing" class="prices-main">
             <h1>РАСЧЕТ СТОИМОСТИ</h1>
             <div class="prices">
                 <div class="prices__volume">
@@ -191,7 +191,12 @@
             </div>  
         </section>
 
-        <section class="contacts">
+        <section class="prices-main">
+            <h1>ЧАСТЫЕ ВОПРОСЫ</h1>
+            <div class="questions_contain" id="questionsContainer"></div>
+        </section>
+
+        <section id="contacts" class="contacts">
             <h1>КОНТАКТЫ</h1>
             <div class='contacts-block'>
                 <div class='contain__contacts_tel'>
@@ -289,49 +294,24 @@
         <input type="checkbox" id="actionMenuButton"/>
         <div class="actions-menu">
         <button class="btn btn--share">
-            <img src="./img/Main/arrowhead-up.png"/>
-        </button>
+            <a href="#about">
+                <img src="./img/Main/arrowhead-up.png"/>
+            </a>
+        </button> 
         <button class="btn btn--star">
-            <img src="./img/Main/whatsapp.png"/>
+            <a href="https://wa.me/+79145449074?text=Здравствуйте,%20">
+                <img src="./img/Main/whatsapp.png"/>
+            </a>
         </button>
         <button class="btn btn--comment">
-            <img src="./img/Main/telegram.png"/>
+            <a href="https://t.me/+79145449074?text=Здравствуйте,%20">
+                <img src="./img/Main/telegram.png"/>
+            </a> 
         </button>
         <label for="actionMenuButton" class="btn btn--large btn--menu"/>
     </div>
 
-    <script>
-        const basePriceRoof = 2000;
-        const basePriceFacade = 3300;
-        const basePriceFinish = 650;
-    
-        const slider = document.getElementById('slider');
-        const sliderValue = document.getElementById('sliderValue');
-        const roofPrice = document.getElementById('roofPrice');
-        const facadePrice = document.getElementById('facadePrice');
-        const finishPrice = document.getElementById('finishPrice');
-    
-        slider.value = 1; 
-        sliderValue.textContent = slider.value;
-    
-        function calculatePrice(basePrice, value) {
-            return basePrice * value;
-        }
-    
-        function updatePrices() {
-            const value = +slider.value;
-            sliderValue.textContent = value;
-            
-            roofPrice.textContent = `от ${calculatePrice(basePriceRoof, value)} руб`;
-            facadePrice.textContent = `от ${calculatePrice(basePriceFacade, value)} руб`;
-            finishPrice.textContent = `от ${calculatePrice(basePriceFinish, value)} руб`;
-    
-            slider.style.background = `linear-gradient(to right, #56d270 1%, #56d270 ${value}%, rgb(232, 232, 232) ${value}%, rgb(232, 232, 232) 100%)`;
-        }
-    
-        slider.addEventListener('input', updatePrices);
-
-        updatePrices();
-    </script>
+    <script src="/js/questions/script.js"></script>
+    <script src="/js/prices/script.js"></script>
 </body>
 </html>

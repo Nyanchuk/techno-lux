@@ -83,22 +83,24 @@ header {
     z-index: 9;
 }
 
-.header-section-link div {
+.header-section-link a {
     cursor: pointer;
+    text-decoration: none;
+    position: relative;
     padding-top: 10px;
     padding-bottom: 10px;
     width: 100%;
     background: #56d270;
+    color: #ffffff;
     border-radius: 5px;
     text-align: center;
     font-size: 20px;
-    color: #ffffff;
     font-weight: 300;
     transition: all 0.3s;
     box-shadow: 5px 5px 5px #4f4f4f52;
 }
 
-.header-section-link div:hover {
+.header-section-link a:hover {
     background: rgb(72, 64, 64);
 }
 
@@ -186,7 +188,7 @@ header {
 
 @media (max-width: 1100px) {
 
-    .header-section-link div {
+    .header-section-link a {
         font-size: 16px;
     }
 
@@ -220,7 +222,7 @@ header {
         overflow-x: hidden; 
     }
 
-    .header-section-link div {
+    .header-section-link a {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -288,7 +290,7 @@ header {
         gap: 5px;
     }
 
-    .header-section-link div {
+    .header-section-link a {
         font-size: 2.5vw;
     }
 

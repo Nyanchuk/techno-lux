@@ -8,6 +8,9 @@ main {
     align-items: center;
     gap: 64px;
 }
+html {
+  scroll-behavior: smooth;
+}
 /* Блок О КОМПАНИИ */
 .company {
     display: flex;
