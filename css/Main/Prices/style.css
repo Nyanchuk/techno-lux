@@ -163,6 +163,10 @@
     }
   }
   @media (max-width: 430px) {
+    .prices__volume {
+      margin: 0 auto;
+      width: 90vw;
+    }
     .prices-main {
       overflow-x: hidden;
     }

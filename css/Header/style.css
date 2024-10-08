@@ -110,6 +110,7 @@ header {
     background-image: url(../../img/Header/first-screen.jpg);
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     border: none;
     border-radius: 15px;
@@ -208,6 +209,14 @@ header {
     body {
         overflow-x: hidden; 
     }
+
+    .header-section-screen {
+        background-size: cover;
+        background-attachment: scroll;
+        border-radius: 16px;
+        overflow: hidden;
+    }
+
     .header-section-link div {
         display: flex;
         align-items: center;
@@ -316,6 +325,5 @@ header {
     .header-section-color span {
         font-size: 24px;
         font-weight: 700;
-        text-shadow: 0 0 5px #ffffff59;
     }
 }
