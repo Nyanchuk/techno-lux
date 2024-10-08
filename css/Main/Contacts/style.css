@@ -66,7 +66,6 @@
     font-size: 17px;
   }
   .mode {
-    width: 70%;
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -137,6 +136,20 @@
     gap: 35px;
     color: rgb(72, 64, 64);
   }
+
+  .contacts-block-time {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+  }
+
+  .contacts-block-text {
+    text-align: center;
+    font-size: 32px;
+    color: rgb(72, 64, 64);
+  }
   
   .contain__contacts_color h5 {
     font-size: 18px;
@@ -165,7 +178,7 @@
     font-size: 20px;
   }
   
-    @media (max-width: 1550px) {
+  @media (max-width: 1550px) {
     .contain__contacts_img {
       height: 300px;
     }
@@ -176,8 +189,7 @@
       border: 2px solid #56d27139;
     }
     .contain__contacts_tel {
-      padding-left: 24px;
-      padding-right: 24px;
+
       width: 100%;
       display: flex;
       align-items: center;
@@ -218,6 +230,10 @@
     }
   } 
   @media (max-width: 1000px) {
+    .contacts h1 {
+      text-align: center;
+      font-size: 36px;
+  }
     .whatsapp__img {
       height: 6vw;
       width: 6vw;
@@ -245,6 +261,9 @@
     }
   }
   @media (max-width: 500px) {
+    .contacts-block-text {
+      font-size: 24px;
+    }
     .message__whatsapp {
       padding-top: 10px;
       padding-bottom: 10px;
@@ -369,7 +388,14 @@
       text-align: center;
     }
     .message__whatsapp h5 {
-  
       font-size: 18px;
+    }
+    .mode__worker_block {
+      width: 40px;
+    }
+  }
+  @media (max-width: 376px) {
+    .mode__worker_block {
+      width: 35px;
     }
   }

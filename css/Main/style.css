@@ -30,6 +30,20 @@ main {
     padding: 20px;
     font-size: 20px;
     color: rgb(72, 64, 64);
+    background: rgba(228, 228, 228, 0.5);
+    border-radius: 16px;
+}
+
+.company-colum_text p {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.company-colum_stages {
+  display: flex;
+  gap: 10px;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .company-colum_text span {
@@ -155,4 +169,54 @@ input[type="checkbox"] {
     }
 }
 
-/* Блок ВИДЫ РАБОТ */
+@media (max-width: 1100px) {
+  .company-colum_stages {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 960px) {
+  .company-colum_text h1 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .company {
+    flex-direction: column;
+  }
+  .company-colum {
+    flex-direction: row;
+  }
+  .company-colum img {
+    max-width: 60%;
+  }
+  .company-colum_text p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 660px) {
+  .company-colum img {
+    display: none;
+  }
+
+  .company-colum_text {
+    flex: 1;
+  }
+}
+
+@media (max-width: 430px) {
+  .company {
+    gap: 10px;
+  }
+
+  .company-colum_text h1 {
+    font-size: 24px;
+    text-align: center;
+    color: #56d270;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #56d270;
+  }
+}

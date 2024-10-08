@@ -57,3 +57,19 @@ footer {
     background-position: center;
 }
 
+@media (max-width: 800px) {
+    .footer-color {
+        padding: 20px;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 590px) {
+    .footer-contacts:nth-child(2) {
+        display: none;
+    }
+
+    .footer-color {
+        margin: 0 auto;
+    }
+}

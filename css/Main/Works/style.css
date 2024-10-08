@@ -16,7 +16,7 @@
 .work-block_element {
     padding: 20px;
     height: auto;
-    background-color: antiquewhite;
+    background-color: rgba(228, 228, 228, 0.5);
     border-radius: 16px;
     display: flex;
     flex-direction: column;
@@ -28,7 +28,33 @@
     flex-direction: column;
     gap: 5px;
     padding-top: 20px;
+    font-size: 18px;
+    line-height: 23px;
 }
+
+.work-block-dop {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 16px;
+    background-color: #d5fedd;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.work-block-dop span {
+    text-align: center;
+    font-size: 28px;
+    color: #56d270;
+}
+
+.work-block-dop p {
+    text-align: center;
+    font-size: 18px;
+    line-height: 23px;
+    color: #27ca4a;
+}
+
 
 .work-block_element span {
     text-align: center;
@@ -38,7 +64,8 @@
 
 .work-block_element p {
     text-align: center;
-    font-size: 16px;
+    font-size: 18px;
+    line-height: 23px;
     color: rgb(72, 64, 64);
 }
 .work-block_element div {
@@ -53,8 +80,29 @@
     color: rgb(72, 64, 64);
 }
 
-@media (max-width: 990px) {
+@media (max-width: 1100px) {
     .work-block {
         grid-template-columns: 1fr;
+    }
+    .work h1 {
+        text-align: center;
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 800px) {
+    .work-block_element p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .work-block_element-done {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .work-block-dop p {
+        font-size: 16px;
+        line-height: 20px;
     }
 }
