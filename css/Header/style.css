@@ -176,6 +176,13 @@ header {
 }
 
 @media (max-width: 1100px) {
+    .header-section-screen {
+        background-size: cover;
+        background-attachment: scroll;
+        border-radius: 16px;
+        overflow: hidden;
+    }
+
     .header-section-link div {
         font-size: 16px;
     }
@@ -208,13 +215,6 @@ header {
 @media (max-width: 900px) {
     body {
         overflow-x: hidden; 
-    }
-
-    .header-section-screen {
-        background-size: cover;
-        background-attachment: scroll;
-        border-radius: 16px;
-        overflow: hidden;
     }
 
     .header-section-link div {
