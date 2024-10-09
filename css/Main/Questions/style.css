@@ -88,7 +88,7 @@
 
     .answer.show {
         padding: 12px;
-        font-size: 18px;
+        font-size: 16px;
         margin-bottom: 15px;
     }
 
@@ -97,14 +97,14 @@
     }
     .prices-main h1 {
         padding: 0;
-      padding-top: 15px;
-      padding-bottom: 15px;
-      background: none;
-      font-weight: 400;
-      font-size: 32px;
-      color: #19ad39;
-      background: #d5fedd;
-      border: none;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background: none;
+        font-weight: 400;
+        font-size: 32px;
+        color: #19ad39;
+        background: #d5fedd;
+        border: none;
     }
     .questions__contain_block span {
       font-size: 16px
