@@ -100,9 +100,13 @@
       padding-top: 15px;
       padding-bottom: 15px;
       background: none;
-      font-weight: 700;
-      font-size: 46px;
-      color: #4dbb65;
-      border: 2px solid #4dbb65;
+      font-weight: 400;
+      font-size: 32px;
+      color: #19ad39;
+      background: #d5fedd;
+      border: none;
+    }
+    .questions__contain_block span {
+      font-size: 16px
     }
 }

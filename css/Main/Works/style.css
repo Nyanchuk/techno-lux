@@ -112,10 +112,17 @@
         padding: 0;
         padding-top: 15px;
         padding-bottom: 15px;
-        background: none;
-        font-weight: 700;
-        font-size: 46px;
-        color: #4dbb65;
-        border: 2px solid #4dbb65;
+        font-weight: 400;
+        font-size: 32px;
+        color: #19ad39;
+        background: #d5fedd;
+        border: none;
+    }
+
+    .work-block_element span {
+        font-size: 24px;
+        text-align: center;
+        color: #56d270;
+        padding-bottom: 5px;
     }
 }
