@@ -79,6 +79,64 @@
 .work-block_element div {
     color: rgb(72, 64, 64);
 }
+.title-img {
+    position: relative;
+}
+.title-img img {
+    position: absolute;
+}
+
+.title-img img:nth-child(1) {
+    top: -130px;
+    right: 200px;
+    width: 60px;
+    height: 60px;
+}
+.title-img img:nth-child(2) {
+    top: -110px;
+    right: 10px;
+    width: 100px;
+    height: 100px;
+    transform: rotate(45deg);
+}
+.title-img img:nth-child(3) {
+    top: -70px;
+    right: 300px;
+    width: 45px;
+    height: 45px;
+}
+.title-img img:nth-child(4) {
+    top: -50px;
+    right: 150px;
+    width: 55px;
+    height: 55px;
+}
+.title-img img:nth-child(5) {
+    top: -100px;
+    right: 510px;
+    width: 35px;
+    height: 35px;
+}
+.title-img img:nth-child(6) {
+    top: -40px;
+    right: 450px;
+    width: 35px;
+    height: 35px;
+}
+.title-img img:nth-child(7) {
+    transform: rotate(-45deg);
+    top: -100px;
+    right: 400px;
+    width: 45px;
+    height: 45px;
+}
+
+@media (max-width: 1200px) {
+    
+    .title-img img {
+        display: none;
+    }
+}
 
 @media (max-width: 1100px) {
     .work-block {
