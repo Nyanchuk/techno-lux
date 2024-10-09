@@ -131,8 +131,7 @@
     height: 45px;
 }
 
-@media (max-width: 1200px) {
-    
+@media (max-width: 1370px) {
     .title-img img {
         display: none;
     }
